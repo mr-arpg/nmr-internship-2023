@@ -1,14 +1,26 @@
+<div align="center">
+
+![CeFEMA](https://img.shields.io/badge/Research_Unit-CeFEMA_|_CFNMRS-003366?style=for-the-badge)
+![IST](https://img.shields.io/badge/Institution-IST_|_ULisboa-0099ff?style=for-the-badge)
+
 # NMR Study of 5CB Liquid Crystal Phase Transition
 
-> **Estudo da transição de fase isotrópica para fase nemática do 5CB usando RMN**  
-> Study of the isotropic-nematic phase transition in 5CB using NMR
+<h3>"Estudo da transição de fase isotrópica para fase nemática do 5CB"</h3>
 
-**Authors:** Armando Gonçalves, João Silva, Rodrigo Ferreira, Pedro Teigão  
-**Institution:** Instituto Superior Técnico, Universidade de Lisboa  
-**Course:** Laboratório de Física Experimental em Unidades de Investigação  
-**Year:** 2022
+<p align="center">
+  <b>Armando Gonçalves</b> • <b>João Silva</b> • <b>Rodrigo Ferreira</b> • <b>Pedro Teigão</b>
+</p>
+
+</div>
 
 ---
+
+<p align="center">
+  <img src="img/lab1.jpeg" width="45%" style="border-radius: 5px; margin-right: 10px;" />
+  <img src="img/lab2.jpeg" width="45%" style="border-radius: 5px;" />
+  <br>
+  <i>Figure 1: NMR Spectrometer setup at CeFEMA laboratories.</i>
+</p>
 
 ## 📋 Table of Contents
 
@@ -16,7 +28,6 @@
 - [Theoretical Background](#theoretical-background)
 - [Experimental Setup](#experimental-setup)
 - [Key Results](#key-results)
-- [Repository Structure](#repository-structure)
 - [Conclusions](#conclusions)
 
 ---
@@ -24,6 +35,8 @@
 ## 🔬 Overview
 
 This work investigates the **nematic-isotropic phase transition** of 5CB (4-cyano-4'-pentylbiphenyl), a thermotropic liquid crystal, using **¹H Nuclear Magnetic Resonance (NMR) spectroscopy**. 
+
+This project was developed during a research internship at the **Complex Fluid, NMR and Surfaces Group (CFNMRS)** within **CeFEMA** (Center of Physics and Engineering of Advanced Materials). The study focuses on analyzing spectral data to determine key physical properties such as the transition temperature and the order parameter of the liquid crystal.
 
 ### Objectives
 - Observe the phase transition from nematic to isotropic phase
@@ -163,45 +176,6 @@ Systematic T₁ differences observed near T_c:
 - **Cooling:** Lower T₁ values (thermal gradient → higher actual temperature)
 - Effect negligible for |T - T_c| > 1°C
 - Mitigation: Longer equilibration times near transition
-
----
-
-## 📁 Repository Structure
-
-```
-5CB-NMR-phase-transition/
-│
-├── README.md                          # This file
-├── report/
-│   └── Relatório_RMN.pdf             # Full experimental report (Portuguese)
-│
-├── data/
-│   ├── raw/
-│   │   ├── fid/                      # Free Induction Decay signals
-│   │   ├── spectra/                  # Processed NMR spectra
-│   │   └── temperature_calibration/  # Thermocouple calibration data
-│   │
-│   └── processed/
-│       ├── T1_measurements.csv       # Relaxation time data
-│       ├── dipolar_splitting.csv     # Order parameter data
-│       └── chemical_shifts.csv       # Peak positions (isotropic phase)
-│
-├── analysis/
-│   ├── fitting_scripts/
-│   │   ├── haller_fit.py            # Order parameter fitting
-│   │   ├── bpp_model.py             # T₁ BPP model fitting
-│   │   └── lorentzian_fit.py        # Spectral peak fitting
-│   │
-│   └── plots/
-│       ├── order_parameter.png
-│       ├── T1_vs_temperature.png
-│       └── spectra_comparison.png
-│
-├── figures/
-│   └── [All figures from report]
-│
-└── requirements.txt                  # Python dependencies
-```
 
 ---
 
